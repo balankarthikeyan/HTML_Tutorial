@@ -1,9 +1,8 @@
-# HTML
+#THYMELEAF => https://www.youtube.com/watch?v=4-Mhrh3M0co
+#Output => #http://itutorial.thymeleaf.org/exercise/1
+#HTML to JSX Compiler => https://magic.reactjs.net/htmltojsx.htm
+_Install_
 
-_What is HTML?????_
-
-`Hypertext Markup Language` is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, It forms a triad of cornerstone technologies for the World Wide Web.
-
-_What is Markup Language????_
-
-Markup langauage naa tag type panni ezhutharathu, Human understand pannikirathu kaa create pannathu... Element type laa tree structure write panndrathu...
+- Java
+- Apache Maven
+- https://spring.io/tools
