@@ -68,6 +68,7 @@ select.custom-dropdown {
   display: flex;
   flex-direction: row;
   background: white;
+  min-height: 472px;
 }
 .main-container .business-picture {
   width: 50vw;
