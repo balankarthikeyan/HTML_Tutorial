@@ -1,8 +1,0 @@
-<@.vars[layouts['img']]/>
-
-<#list user?keys as prop>
-    ${prop} = ${user.get(prop)}
-</#list>
-
-// checking empty objects
-object?has_content 
