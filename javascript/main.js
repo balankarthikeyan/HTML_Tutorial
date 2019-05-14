@@ -112,6 +112,9 @@ function renderFooter() {
     </footer>`;
 }
 
+/**
+ * ON DOCUMENT LOAD
+ */
 const onLoad = () => {
   document.body.innerHTML = `${renderHeader()} ${renderContainer()} ${renderFooter()}`;
 };
