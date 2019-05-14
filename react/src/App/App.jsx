@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Admin from '../Admin'
 
 class App extends React.Component {
   static defaultProps = {}
   render() {
     return (
       <>
-        <div>Hello, Welcome!</div>
-        <div>My First React App</div>
+        <Admin />
       </>
     )
   }
