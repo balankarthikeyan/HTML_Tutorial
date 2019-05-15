@@ -81,6 +81,20 @@ make dev
 
 <img src="./zips/addidas_perf.png" width="400px" />
 
+---
+
 - [Skava](https://www.skava.com/)
 
 <img src="./zips/skava_perf.png" width="400px" />
+
+---
+
+- [aBundle](https://www.abundle.com/)
+
+<img src="./zips/abundle_perf.png" width="400px" />
+
+---
+
+- [Kraft](https://kraftstgoreidaqa.skavaone.com/)
+
+<img src="./zips/kraft_perf.png" width="400px" />
