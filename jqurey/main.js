@@ -54,7 +54,7 @@ function renderHeader() {
  * CONTAINERS
  */
 function renderContainer() {
-  return `<container class="main-container">
+  return `<div class="main-container">
       <img
         src="${wordings.businessphoto}"
         alt=" ${wordings.businessphotoalt}"
@@ -96,7 +96,7 @@ function renderContainer() {
           </a>
         </form>
       </div>
-    </container>`;
+    </div>`;
 }
 
 /**
