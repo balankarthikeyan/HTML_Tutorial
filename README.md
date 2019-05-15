@@ -74,3 +74,11 @@ make dev
 cd ./angularjs
 make dev
 ```
+
+## Why Do we need UI Development Team?
+
+- [Addidas](https://shop.adidas.co.in/)
+  <img src="./zips/addidas_perf.png" width="400px" />
+
+- [Skava](https://www.skava.com/)
+  <img src="./zips/skava_perf.png" width="400px" />
