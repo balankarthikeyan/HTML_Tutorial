@@ -2,7 +2,7 @@ import React from 'react'
 
 function Container(props) {
   return (
-    <container className="main-container">
+    <div className="main-container">
       <img
         src="https://admin.skavacommerce.com/admin/studio/customlib/img/loginBanner.jpg"
         alt=" Business related photo"
@@ -47,7 +47,7 @@ function Container(props) {
           </a>
         </form>
       </div>
-    </container>
+    </div>
   )
 }
 
