@@ -77,6 +77,12 @@ make dev
 
 ## Why Do we need UI Development Team?
 
+- [Admin](https://admin.skavacommerce.com/admin/studio/login)
+
+<img src="./zips/admin_perf.png" width="400px" />
+
+---
+
 - [Addidas](https://shop.adidas.co.in/)
 
 <img src="./zips/addidas_perf.png" width="400px" />
