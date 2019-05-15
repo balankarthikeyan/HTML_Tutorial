@@ -102,7 +102,7 @@ button.form-button {
 }
 .form-signin .form-fields::after {
   content: attr(icontype);
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   color: #292929;
@@ -142,7 +142,7 @@ button.form-button {
   top: 0;
 }
 .form-checkbox label.checkbox-support:after {
-  content: '';
+  content: "";
   width: 9px;
   height: 5px;
   position: absolute;
@@ -158,10 +158,10 @@ button.form-button {
 .form-checkbox label.checkbox-support:hover::after {
   opacity: 0.3;
 }
-.form-checkbox input[type='checkbox'] {
+.form-checkbox input[type="checkbox"] {
   visibility: hidden;
 }
-.form-checkbox input[type='checkbox']:checked + label.checkbox-support:after {
+.form-checkbox input[type="checkbox"]:checked + label.checkbox-support:after {
   opacity: 1;
 }
 .form-signin .form-forgot-password {
@@ -177,7 +177,7 @@ button.form-button {
   .main-container:before {
     height: 230px;
     bottom: 0px;
-    content: '';
+    content: "";
     position: absolute;
     z-index: 0;
     width: 100%;
