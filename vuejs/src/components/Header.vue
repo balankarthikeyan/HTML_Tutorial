@@ -25,10 +25,9 @@
     </div>
     <div arrow="keyboard_arrow_down" class="header-language">
       <form>
-        <label for="languageselect">language:</label>
+        <label for="languageselect">{{ languagetitle }}</label>
         <select name="languageselect" id="languageselect" class="custom-dropdown">
-          <option value="English">English</option>
-          <option value="Canada">Canada</option>
+          <option v-for="(item, index) in language" :key="index" :value="item">{{ item }}</option>
         </select>
       </form>
     </div>
@@ -40,7 +39,13 @@
 <script>
 export default {
   name: "Header",
-  props: {}
+  props: {},
+  data: function() {
+    return {
+      languagetitle: "language",
+      language: ["English", "Canada"]
+    };
+  }
 };
 </script>
 

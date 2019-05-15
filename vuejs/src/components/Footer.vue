@@ -1,9 +1,9 @@
 <template>
   <footer>
     <span class="footer-inner-wrapper">
-      <p>Learn more about Skava Commerce and upcoming events at Skava.com</p>
-      <h4>Privacy Policy</h4>
-      <p>© 2019 Skava. All rights reserved.</p>
+      <p>{{footerdescription}}</p>
+      <h4>{{footerprivacylabel}}</h4>
+      <p>{{footercopy}}</p>
     </span>
   </footer>
 </template>
@@ -11,7 +11,15 @@
 <script>
 export default {
   name: "Footer",
-  props: {}
+  props: {},
+  data: function() {
+    return {
+      footerdescription:
+        "Learn more about Skava Commerce and upcoming events at Skava.com",
+      footerprivacylabel: " Privacy Policy",
+      footercopy: "© 2019 Skava. All rights reserved."
+    };
+  }
 };
 </script>
 

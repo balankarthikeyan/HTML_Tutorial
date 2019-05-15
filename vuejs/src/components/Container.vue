@@ -6,14 +6,14 @@
       class="business-picture"
     >
     <div class="form-wrapper">
-      <h1 class="form-title">Sign In</h1>
+      <h1 class="form-title">{{admintitle}}</h1>
       <form class="form-signin">
         <div icontype="mail" class="form-fields">
-          <label class="form-label" for="maillabel">Your Email</label>
+          <label class="form-label" for="maillabel">{{useremaillabel}}</label>
           <input type="text" id="maillabel" name="maillabel">
         </div>
         <div icontype="lock" class="form-fields">
-          <label class="form-label" for="passowrdlabel">Your Password</label>
+          <label class="form-label" for="passowrdlabel">{{userpasswordlabel}}</label>
           <input type="password" id="passowrdlabel" name="passowrdlabel">
         </div>
         <div class="button-group">
@@ -22,11 +22,15 @@
               <input checked type="checkbox" id="loggedin-checked">
               <label class="checkbox-support" for="loggedin-checked"></label>
             </div>
-            <label class="loggedin-label" for="loggedin-checked">Keep me logged in</label>
+            <label class="loggedin-label" for="loggedin-checked">{{loginSavelabel}}</label>
           </div>
-          <button class="form-button">submit</button>
+          <button class="form-button">{{submitlabel}}</button>
         </div>
-        <a href="#" class="form-forgot-password" aria-label="get reset password">Forgot Password?</a>
+        <a
+          href="#"
+          class="form-forgot-password"
+          aria-label="get reset password"
+        >{{forgotpasswordlabel}}</a>
       </form>
     </div>
   </container>
@@ -36,7 +40,17 @@
 <script>
 export default {
   name: "Footer",
-  props: {}
+  props: {},
+  data: function() {
+    return {
+      admintitle: "Sign In",
+      useremaillabel: "Your Email",
+      userpasswordlabel: "Your Password",
+      loginSavelabel: "Keep me logged in",
+      submitlabel: "submit",
+      forgotpasswordlabel: "Forgot Password?"
+    };
+  }
 };
 </script>
 
