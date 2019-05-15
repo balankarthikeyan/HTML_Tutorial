@@ -1,5 +1,5 @@
 <template>
-  <container class="main-container">
+  <div class="main-container">
     <img
       src="https://admin.skavacommerce.com/admin/studio/customlib/img/loginBanner.jpg"
       alt=" Business related photo"
@@ -33,7 +33,7 @@
         >{{forgotpasswordlabel}}</a>
       </form>
     </div>
-  </container>
+  </div>
 </template>
 
 
