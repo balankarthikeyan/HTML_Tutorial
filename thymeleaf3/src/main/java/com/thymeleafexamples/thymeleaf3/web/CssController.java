@@ -11,7 +11,7 @@ public class CssController {
 
     @RequestMapping(value = "main.css", method = RequestMethod.GET)
     public String main(Model model, HttpServletResponse response) {
-        model.addAttribute("backgroundColor", "lightblue");
+        // model.addAttribute("backgroundColor", "lightblue");
         return "main.css";
     }
 }

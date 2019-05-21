@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.thymeleafexamples</groupId>
-    <artifactId>thymeleaf3-template-modes-example</artifactId>
+    <artifactId>skava-admin</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Thymeleaf 3 template modes example</name>
+    <name>Skava Admin Page</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,6 +47,13 @@
             <artifactId>thymeleaf-spring4</artifactId>
             <version>${thymeleaf.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180813</version>
+        </dependency>
+
     </dependencies>
 
     <build>
