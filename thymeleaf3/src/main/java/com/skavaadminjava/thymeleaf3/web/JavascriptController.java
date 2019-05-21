@@ -1,4 +1,4 @@
-package com.thymeleafexamples.thymeleaf3.web;
+package com.skavaadminjava.thymeleaf3.web;
 
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;

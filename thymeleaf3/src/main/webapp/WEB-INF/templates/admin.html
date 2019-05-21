@@ -12,13 +12,7 @@
 </head>
 
 <body>
-	<!-- <h1 th:text="${data.title}">User hobbies</h1> -->
-	<ul>
-		<li th:each="item : ${items}" th:text="${item.title}">
-			Cinema
-		</li>
-	</ul>
-	<button type="button" onclick="showCode()">Show secret code</button>
+	<!-- <button type="button" onclick="showCode()">Show secret code</button> -->
 	<div id="code"></div>
 	<header class="main">
 		<div class="header-logo">
@@ -38,27 +32,27 @@
 		</div>
 		<div arrow="keyboard_arrow_down" class="header-language">
 			<form>
-				<label for="languageselect">language:</label>
+				<label for="languageselect" th:text="${items[0].value}">language:</label>
 				<select name="languageselect" id="languageselect" class="custom-dropdown">
-					<option value="English"> English</option>
-					<option value="Canada"> Canada</option>
+					<option value="${item}" th:each="item : ${language}" th:text="${item}">
+						English
+					</option>
 				</select>
 			</form>
 		</div>
 		<i class="header-pancake">menu</i>
 	</header>
 	<container class="main-container">
-		<img src="https://admin.skavacommerce.com/admin/studio/customlib/img/loginBanner.jpg"
-			alt=" Business related photo" class="business-picture" />
+		<img th:src="@{${items[1].value}}" th:alt="${items[2].value}" class="business-picture" />
 		<div class="form-wrapper">
-			<h1 class="form-title">Sign In</h1>
+			<h1 th:text="${items[3].value}" class="form-title">Sign In</h1>
 			<form class="form-signin">
 				<div icontype="mail" class="form-fields">
-					<label class="form-label" for="maillabel">Your Email</label>
+					<label class="form-label" th:text="${items[4].value}" for="maillabel">Your Email</label>
 					<input type="text" id="maillabel" name="maillabel" />
 				</div>
 				<div icontype="lock" class="form-fields">
-					<label class="form-label" for="passowrdlabel">Your Password</label>
+					<label class="form-label" th:text="${items[5].value}" for="passowrdlabel">Your Password</label>
 					<input type="password" id="passowrdlabel" name="passowrdlabel" />
 				</div>
 				<div class="button-group">
@@ -67,22 +61,23 @@
 							<input checked type="checkbox" id="loggedin-checked" />
 							<label class="checkbox-support" for="loggedin-checked"></label>
 						</div>
-						<label class="loggedin-label" for="loggedin-checked">Keep me logged in</label>
+						<label class="loggedin-label" th:text="${items[6].value}" for="loggedin-checked">Keep me logged
+							in</label>
 					</div>
-					<button class="form-button">submit</button>
+					<button th:text="${items[7].value}" class="form-button">submit</button>
 				</div>
-				<a href="#" class="form-forgot-password" aria-label="get reset password">Forgot Password?</a>
+				<a href="#" class="form-forgot-password" th:text="${items[8].value}"
+					aria-label="get reset password">Forgot Password?</a>
 			</form>
 		</div>
 	</container>
 	<footer>
 		<span class="footer-inner-wrapper">
-			<p>Learn more about Skava Commerce and upcoming events at Skava.com</p>
-			<h4>Privacy Policy</h4>
-			<p>© 2019 Skava. All rights reserved.</p>
+			<p th:text="${items[9].value}">Learn more about Skava Commerce and upcoming events at Skava.com</p>
+			<h4 th:text="${items[10].value}">Privacy Policy</h4>
+			<p th:text="${items[11].value}">© 2019 Skava. All rights reserved.</p>
 		</span>
 	</footer>
-
 </body>
 
 </html>

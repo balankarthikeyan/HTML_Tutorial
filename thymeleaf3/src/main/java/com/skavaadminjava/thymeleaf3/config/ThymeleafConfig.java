@@ -1,6 +1,6 @@
-package com.thymeleafexamples.thymeleaf3.config;
+package com.skavaadminjava.thymeleaf3.config;
 
-import static com.thymeleafexamples.thymeleaf3.util.ArrayUtil.array;
+import static com.skavaadminjava.thymeleaf3.util.ArrayUtil.array;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
@@ -21,7 +21,7 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.thymeleafexamples")
+@ComponentScan("com.skavaadminjava")
 public class ThymeleafConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
     private static final String UTF8 = "UTF-8";
