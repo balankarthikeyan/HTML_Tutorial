@@ -1,3 +1,9 @@
+# Install
+
+```
+brew install maven
+```
+
 # Thymeleaf 3 template modes example
 
 Simple example of the new Thymeleaf 3 template modes.
